@@ -28,8 +28,8 @@ git remote add qyber https://qyber.black/mrs/info-mrs.wiki.git
 git config --global user.email "frank@langbein.org"
 git config --global user.name "Frank C Langbein (via github actions)"
 git config pull.rebase true
-git fetch qyber master
-git merge --no-edit qyber/master
+git fetch qyber main
+git merge --no-edit qyber/main
 if ! diff -q home.md Home.md; then
   cp home.md Home.md
   git add --all
